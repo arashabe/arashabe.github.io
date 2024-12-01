@@ -58,15 +58,16 @@ footer p {
 footer a {
     color: white;
     text-decoration: none;
+    display: inline-block;
 }
 
 footer a:hover {
     text-decoration: underline;
-    color: rgb(36, 129, 200) !important;
 }
 
 .social-logo {
     width: 22px;  
     height: 22px; 
     vertical-align: middle; 
+    margin: 0 3px;
 }
