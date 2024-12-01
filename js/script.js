@@ -14,4 +14,10 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: 0 }, 800);
         return false;
     });
+    // I added this function to automatically close the hamburger menu after clicking one of the options
+    $('a.nav-link').on('click', function() {
+        if ($('.navbar-collapse').hasClass('show')) {
+            $('.navbar-collapse').collapse('hide');
+        }
+    });
 });
