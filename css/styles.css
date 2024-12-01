@@ -1,0 +1,34 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+#backToTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+}
+
+#backToTopBtn:hover {
+    background-color: #555; 
+}
