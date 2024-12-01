@@ -37,3 +37,36 @@ section {
 #backToTopBtn:hover {
     background-color: #555; 
 }
+
+footer {
+    background-color: #343a40; 
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+    border-radius: 3px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer p { 
+    margin-bottom: 5px;  
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(36, 129, 200) !important;
+}
+
+.social-logo {
+    width: 22px;  
+    height: 22px; 
+    vertical-align: middle; 
+}
