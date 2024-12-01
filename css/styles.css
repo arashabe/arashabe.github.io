@@ -1,13 +1,18 @@
+html { 
+    scroll-behavior: smooth; 
+ }
 body {
     font-family: 'Arial', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
     margin-bottom: 20px;
 }
 
 section {
     padding: 60px 0;
+    scroll-margin-top: 60px;
+    
 }
 
 .bg-light {
