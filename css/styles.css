@@ -3,6 +3,8 @@ html {
  }
 body {
     font-family: 'Arial', sans-serif;
+    padding-top: 56px; 
+
 }
 
 h1, h2, h3 {
