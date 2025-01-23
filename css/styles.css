@@ -11,6 +11,22 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
+p {
+    text-align: justify; 
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+}
+
+li {
+    line-height: 1.6; 
+}
+
+b {
+    font-weight: bold;
+    color: #001832;
+}
+
+
 section {
     padding: 60px 0;
     scroll-margin-top: 60px;
@@ -55,6 +71,7 @@ footer {
 
 footer p { 
     margin-bottom: 5px;  
+    text-align: center;
 }
 
 footer a {
