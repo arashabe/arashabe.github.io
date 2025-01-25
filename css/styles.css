@@ -1,36 +1,40 @@
 html { 
     scroll-behavior: smooth; 
- }
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     padding-top: 56px; 
-
 }
 
-h1, h2, h3 {
+h1, h2, h3, h5 {
     margin-bottom: 20px;
 }
 
 p {
     text-align: justify; 
-    line-height: 1.6; 
     margin-bottom: 15px; 
 }
-
-li {
-    line-height: 1.6; 
-}
-
-b {
-    font-weight: bold;
-    color: #001832;
-}
-
 
 section {
     padding: 60px 0;
     scroll-margin-top: 60px;
-    
+}
+
+.card {
+    border: none !important; 
+    border-radius: 0px !important;
+    background-color: transparent !important; 
+    box-shadow: none !important;
+    margin-bottom: 10px !important;
+}
+
+.card-body {
+    padding: 2rem; 
+}
+
+.card-body p {
+    font-size: 1.1rem; 
 }
 
 .bg-light {
