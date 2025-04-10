@@ -142,7 +142,7 @@
                                  style="width: 150px; height: auto;">
                             <div class="text-md-start">
                                 <h5 class="text-dark mb-1">An Anomaly Detection Pipeline for <a href="https://www.pell.enea.it" target="_blank">PELL-IP</a> Public Street Lighting Data</h5>
-                                <p class="text-muted mb-1">
+                                <p class="text-dark mb-1">
                                     Developed as part of a collaborative effort between 
                                     <a href="https://en.unibg.it/" target="_blank">University of Bergamo</a> and ENEA 
                                     (<em>Italian National Agency for New Technologies, Energy and Sustainable Economic Development</em>), 
@@ -160,7 +160,7 @@
     
                     <div class="details-item mt-3">
                         <h6 class="text-dark mb-2">Objective:</h6>
-                        <p class="text-muted">
+                        <p class="text-dark">
                             The main goal is to build a scalable and production-ready pipeline for unsupervised machine learning models aimed at anomaly detection. By identifying anomalous Points of Delivery (PODIDs) based on monthly energy consumption behaviors, this project seeks to enhance efficiency and reliability in energy management systems, reducing operational inefficiencies and mitigating risks associated with unusual consumption patterns.
                         </p>
                     </div>
@@ -169,10 +169,10 @@
     
                     <div class="approach-item mt-3">
                         <h6 class="text-dark mb-2">Approach:</h6>
-                        <p class="text-muted text-justify">
+                        <p class="text-dark text-justify">
                             The pipeline follows a modular and systematic methodology, designed to optimize performance and scalability in real-time anomaly detection. Key aspects of the approach include:
                         </p>
-                        <ul class="text-muted text-justify">
+                        <ul class="text-dark text-justify">
                             <li><strong>Data Ingestion & Preprocessing:</strong> The pipeline utilizes PySpark and Apache Spark for distributed data ingestion and transformation, enabling efficient handling of large-scale datasets stored on distributed systems like Hadoop (HDFS).</li>
                             <li><strong>Feature Engineering:</strong> The system aggregates monthly energy consumption features and extracts statistical summaries for each Point of Delivery (PODID), ensuring that only complete and meaningful data is included in the anomaly detection process.</li>
                             <li><strong>Hyperparameter Optimization:</strong> To enhance model accuracy and performance, GridSearch was employed to identify the optimal hyperparameters for each unsupervised model applied. This systematic approach involved fine-tuning parameters such as the number of estimators and contamination levels for Isolation Forest, and the neighborhood size for Local Outlier Factor (LOF).</li>
