@@ -1,23 +1,78 @@
-$(document).ready(function() {
-    // Back to top button
-    var backToTopBtn = $("#backToTopBtn");
+document.addEventListener("DOMContentLoaded", function () {
 
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
-            backToTopBtn.fadeIn();
-        } else {
-            backToTopBtn.fadeOut();
+    // =========================================================
+    // Dynamic footer year
+    // =========================================================
+
+    const yearElement = document.getElementById("year");
+
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
+
+    // =========================================================
+    // Back to Top Button
+    // =========================================================
+
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    if (backToTopBtn) {
+
+        function toggleBackToTopButton() {
+
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+
         }
+
+        window.addEventListener("scroll", toggleBackToTopButton);
+
+        backToTopBtn.addEventListener("click", function () {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+
+        // Initial state
+        toggleBackToTopButton();
+    }
+
+
+    // =========================================================
+    // Close mobile navbar after clicking a link
+    // =========================================================
+
+    const navbarLinks = document.querySelectorAll(
+        ".navbar-nav .nav-link"
+    );
+
+    navbarLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            const navbarCollapse =
+                document.querySelector(".navbar-collapse");
+
+            if (
+                navbarCollapse &&
+                navbarCollapse.classList.contains("show")
+            ) {
+
+                if (typeof $ !== "undefined") {
+                    $(navbarCollapse).collapse("hide");
+                }
+
+            }
+
+        });
+
     });
 
-    backToTopBtn.on('click', function() {
-        $("html, body").animate({ scrollTop: 0 }, 800);
-        return false;
-    });
-    // I added this function to automatically close the hamburger menu after clicking one of the options
-    $('a.nav-link').on('click', function() {
-        if ($('.navbar-collapse').hasClass('show')) {
-            $('.navbar-collapse').collapse('hide');
-        }
-    });
 });
